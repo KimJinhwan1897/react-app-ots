@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; //추가
+import { HashRouter } from 'react-router-dom'; // BrowserRouter에서 HashRouter로 변경
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename="/react-app-ots">
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
